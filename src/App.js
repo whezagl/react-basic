@@ -1,21 +1,17 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
+import Class from "./Class"
+import Count from "./Count"
+import Hook from "./Hook"
 
-class App extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {};
-    }
+class App extends Component { 
 
     render() {
-        return (
-            <div className="app">
-                <div className="row">
-                    <div className="mixed-chart">Dodol</div>
-                </div>
-            </div>
-        );
+        return <div>
+            <Class/>
+            <Hook/>
+            <Count/>
+        </div>
     }
 }
 
-export default App;
+export default App
