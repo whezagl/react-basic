@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
+import useCount from './use-count'
 
-function Count() {
-  const [name] = useState('Count')
-  const [count, setCount] = useState(0)
-  // think of: count = setCount(count + 1)
-  const handleClick = () => setCount(count + 1)
+function Count1() {
+  const [name] = useState('Count~1')
+  const {count, handleClick} = useCount();
 
   return (
     <div>
@@ -16,4 +15,4 @@ function Count() {
   )
 }
 
-export default Count
+export default Count1
